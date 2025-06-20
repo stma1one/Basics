@@ -95,10 +95,41 @@ namespace DelegateExample;
 			}
             return false;   
 		}
-
-		#endregion
-
-
-
+	/// מכפיל שני מספרים שלמים ומחזיר את התוצאה.
+	/// </summary>
+	/// <param name="a"></param>
+	/// <param name="b"></param>
+	/// <returns></returns>
+	public static int Multiply(int a, int b)
+	{
+		return a * b;
 	}
+
+	#endregion
+	#region Any and All methods
+	public static bool AnyLetters(List<string> ls)
+	{
+		for (int i = 0; i < ls.Count; i++)
+			foreach (char c in ls[i])
+			{
+				if (IsLetter(c))
+					return true;
+			}
+		return false;
+	}
+
+	public static bool AllDigits(List<string> ls)
+	{
+		for (int i = 0; i < ls.Count; i++)
+			foreach (char c in ls[i])
+			{
+				if (!IsDigit(c))
+					return false;
+			}
+		return true;
+	}
+	#endregion
+
+
+}
 

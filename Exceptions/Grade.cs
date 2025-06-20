@@ -9,8 +9,11 @@ namespace Exceptions;
 // מחלקה המייצגת ציון עם תכונה פרטית לשמירת הציון
 public class Grade
 {
+	#region Fields
 	private int _score;//תכונה פרטית לשמירת הציון
+	#endregion
 
+	#region Properties
 	// מאפיין ציבורי לגישה לציון
 	public int Score
 	{
@@ -25,7 +28,12 @@ public class Grade
 	
 		}
 	}
-	
+	#endregion
+
+	#region auto-implemented properties
+	public string? Subject { get; set;} //מאפיין ציבורי לשמירת נושא הציון
+	#endregion
+
 	/// <summary>
 	/// בונה של מחלקת Grade עם ציון.
 	/// </summary>

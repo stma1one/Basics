@@ -11,6 +11,7 @@
 		
 		}
 
+		
 		public static Grade CreateGrade(int score)
 		{
 			Grade? grade = null;
@@ -20,7 +21,7 @@
 			
 		}
 
-
+		
 		static void Main(string[] args)
 		{
 			// Exception handling example
